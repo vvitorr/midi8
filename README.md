@@ -1,57 +1,112 @@
-# 🎵 midi8 - Website Oficial
+# MIDI8 Website
 
-Website oficial da **midi8** - Soluções Criativas e Inovadoras
+Site institucional da MIDI8, uma empresa de soluções digitais inovadoras.
 
-🌐 **URL**: [https://midi8.pt](https://midi8.pt)
+## Características / Features
 
-## 📋 Sobre o Projeto
+- Design moderno e responsivo
+- Animações suaves e interativas
+- Formulário de contato funcional
+- Filtro de portfólio
+- Slider de depoimentos
+- Menu mobile
+- Scroll suave
+- Botão de voltar ao topo
+- Loading animation
+- SEO otimizado
 
-Website corporativo moderno e responsivo desenvolvido com:
-- **HTML5** semântico
-- **CSS3** com variáveis e animações
-- **JavaScript** vanilla para interactividade
-- **Font Awesome** para ícones
-- **Design responsivo** para todos os dispositivos
+## Tecnologias Utilizadas / Technologies Used
 
-## 🎨 Identidade Visual
+- HTML5
+- CSS3 (com variáveis CSS e Flexbox/Grid)
+- JavaScript (ES6+)
+- Font Awesome (ícones)
+- Google Fonts
 
-- **Cores principais**: Vermelho (#e74c3c) e Laranja (#f39c12)
-- **Tipografia**: Segoe UI, modern sans-serif
-- **Layout**: Clean, profissional e user-friendly
+## Estrutura do Projeto / Project Structure
 
-## 📱 Secções
-
-1. **Hero Section** - Apresentação impactante
-2. **Sobre a midi8** - Informação institucional
-3. **Serviços** - Portfolio de soluções
-4. **Casos de Sucesso** - Projectos realizados
-5. **Testemunhos** - Feedback de clientes
-6. **Contactos** - Informação de contacto
-
-## 🚀 Deploy
-
-O website está configurado para deploy automático via GitHub Pages.
-
-### Configuração DNS necessária:
 ```
-Tipo: A
-Nome: @
-Valor: 185.199.108.153
-        185.199.109.153
-        185.199.110.153
-        185.199.111.153
-
-Tipo: CNAME
-Nome: www
-Valor: midi8.pt
+midi8/
+├── index.html
+├── styles/
+│   └── main.css
+├── js/
+│   └── main.js
+├── images/
+│   ├── logo.png
+│   └── favicon.png
+└── README.md
 ```
 
-## 📞 Contactos
+## Instalação / Installation
 
-**midi8 - Soluções Criativas e Inovadoras**
-- 📍 Avenida da República, 45 - 2º, 1050-187 Lisboa
-- ☎️ +351 210 123 456
-- ✉️ geral@midi8.pt
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/midi8.git
+```
 
----
-💻 Desenvolvido com ❤️ para a midi8
+2. Navegue até o diretório do projeto:
+```bash
+cd midi8
+```
+
+3. Abra o arquivo `index.html` em seu navegador ou use um servidor local.
+
+## Desenvolvimento / Development
+
+Para desenvolvimento local, você pode usar o Live Server do VS Code ou qualquer outro servidor local.
+
+### VS Code Live Server
+
+1. Instale a extensão "Live Server"
+2. Clique com o botão direito no arquivo `index.html`
+3. Selecione "Open with Live Server"
+
+## Personalização / Customization
+
+### Cores / Colors
+
+As cores principais podem ser alteradas no arquivo `styles/main.css`:
+
+```css
+:root {
+    --primary-red: #e74c3c;
+    --primary-orange: #f39c12;
+    --dark-red: #c0392b;
+    --light-orange: #f5b041;
+    /* ... outras cores ... */
+}
+```
+
+### Conteúdo / Content
+
+O conteúdo do site pode ser editado diretamente no arquivo `index.html`.
+
+### Imagens / Images
+
+Substitua as imagens na pasta `images/` mantendo os mesmos nomes de arquivo ou atualize os caminhos no HTML.
+
+## Deploy / Deployment
+
+O site está configurado para ser hospedado no GitHub Pages. Para fazer o deploy:
+
+1. Faça push das alterações para o repositório
+2. O GitHub Pages irá automaticamente fazer o deploy do site
+
+## Contribuição / Contributing
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## Licença / License
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## Contato / Contact
+
+MIDI8 - contato@midi8.pt
+
+Website: [https://midi8.pt](https://midi8.pt)

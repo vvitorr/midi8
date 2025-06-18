@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>midi8 - Soluções Criativas e Inovadoras</title>
+    <title>MIDI8 - Soluções Digitais</title>
+    <meta name="description" content="MIDI8 - Sua parceira em soluções digitais inovadoras. Desenvolvimento web, aplicativos móveis e consultoria em tecnologia.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
     <!-- Google Analytics (substitua GA_TRACKING_ID pelo código real) -->
     <!-- 
@@ -16,7 +20,6 @@
     </script>
     -->
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -439,241 +442,237 @@
     </style>
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <a href="#" class="logo">midi8</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contactos">Contactos</a></li>
-            </ul>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="MIDI8 Logo">
+                MIDI8
+            </a>
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>Transformamos ideias em realidade</h1>
-                <p>A midi8 é a sua parceira ideal para soluções criativas e inovadoras que fazem a diferença no mercado</p>
-                <a href="#contactos" class="cta-button">Saber mais</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transformando Ideias em Realidade Digital</h1>
+            <p>Soluções tecnológicas inovadoras para impulsionar seu negócio</p>
+            <a href="#contact" class="cta-button">Comece Agora</a>
+        </div>
+    </section>
 
-        <section id="sobre" class="section about">
-            <div class="container">
-                <h2 class="section-title">Sobre a midi8</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>A midi8 é uma empresa pioneira em soluções criativas e tecnológicas, dedicada a transformar visões em realidade tangível. Com uma equipa experiente e apaixonada, oferecemos serviços personalizados que atendem às necessidades específicas de cada cliente.</p>
-                        <p>O nosso diferencial está na combinação única de criatividade, inovação tecnológica e excelência no atendimento. Trabalhamos de perto com os nossos clientes para garantir que cada projeto supera as expectativas e gera resultados excepcionais.</p>
-                    </div>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-lightbulb"></i>
-                            <h3>Inovação</h3>
-                            <p>Soluções criativas e inovadoras</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <h3>Experiência</h3>
-                            <p>Equipa especializada e experiente</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-award"></i>
-                            <h3>Qualidade</h3>
-                            <p>Excelência em cada projeto</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-handshake"></i>
-                            <h3>Parceria</h3>
-                            <p>Relacionamento próximo com clientes</p>
-                        </div>
-                    </div>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A MIDI8 é uma empresa de tecnologia focada em criar soluções digitais inovadoras que transformam negócios. Com anos de experiência e uma equipe altamente qualificada, entregamos projetos que fazem a diferença.</p>
+                    <p>Nossa missão é ajudar empresas a alcançarem seu potencial máximo através da tecnologia, oferecendo soluções personalizadas e resultados mensuráveis.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="servicos" class="section services">
-            <div class="container">
-                <h2 class="section-title">Os nossos serviços</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-palette"></i>
-                        <h3>Design Criativo</h3>
-                        <p>Criação de identidades visuais únicas e impactantes que reflectem a essência da sua marca</p>
+                <div class="about-features">
+                    <div class="feature animate-on-scroll">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Inovação</h3>
+                        <p>Sempre à frente com as últimas tecnologias</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Websites responsivos e modernos com as mais recentes tecnologias do mercado</p>
+                    <div class="feature animate-on-scroll">
+                        <i class="fas fa-users"></i>
+                        <h3>Equipe</h3>
+                        <p>Profissionais altamente qualificados</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Aplicações Mobile</h3>
-                        <p>Desenvolvimento de aplicações nativas e híbridas para iOS e Android</p>
-                    </div>
-                    <div class="service-card">
+                    <div class="feature animate-on-scroll">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Marketing Digital</h3>
-                        <p>Estratégias de marketing digital para aumentar a sua presença online</p>
+                        <h3>Resultados</h3>
+                        <p>Foco em entregar valor real</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-camera"></i>
-                        <h3>Produção Audiovisual</h3>
-                        <p>Criação de conteúdo audiovisual profissional para diversas plataformas</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-cogs"></i>
-                        <h3>Consultoria</h3>
-                        <p>Análise e optimização de processos para maximizar a eficiência do seu negócio</p>
+                    <div class="feature animate-on-scroll">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Parceria</h3>
+                        <p>Relacionamento próximo com clientes</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="portfolio" class="section portfolio">
-            <div class="container">
-                <h2 class="section-title">Casos de sucesso</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>E-commerce ModaLux</h3>
-                            <p>Desenvolvimento completo de plataforma e-commerce com integração de pagamentos e gestão de stock</p>
-                        </div>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites e aplicações web modernas, responsivas e otimizadas para SEO.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Apps Móveis</h3>
+                    <p>Aplicativos nativos e híbridos para iOS e Android.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce</h3>
+                    <p>Lojas virtuais completas com integração de pagamentos.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias de marketing online para aumentar sua presença digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title">Portfólio</h2>
+            <div class="portfolio-filter">
+                <button class="active" data-filter="all">Todos</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="mobile">Mobile</button>
+                <button data-filter="ecommerce">E-commerce</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>App Restaurante Premium</h3>
-                            <p>Aplicação mobile para reservas e encomendas online com interface intuitiva</p>
-                        </div>
+                    <div class="portfolio-content">
+                        <h3>Site Corporativo</h3>
+                        <p>Design moderno e responsivo para empresa de tecnologia</p>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>Website Corporativo TechFlow</h3>
-                            <p>Criação de website institucional moderno com sistema de gestão de conteúdos</p>
-                        </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="mobile">
+                    <div class="portfolio-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>App de Delivery</h3>
+                        <p>Aplicativo de entrega de comida com geolocalização</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Loja Virtual</h3>
+                        <p>E-commerce completo com múltiplos métodos de pagamento</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section testimonials">
-            <div class="container">
-                <h2 class="section-title">O que dizem os nossos clientes</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial">
-                        <p>A midi8 superou todas as nossas expectativas. O profissionalismo e a criatividade da equipa são excepcionais. Recomendo vivamente!</p>
-                        <div class="testimonial-author">Ana Silva - Directora de Marketing, TechCorp</div>
-                    </div>
-                    <div class="testimonial">
-                        <p>Trabalhar com a midi8 foi uma experiência fantástica. Entregaram o projeto no prazo e com uma qualidade impressionante.</p>
-                        <div class="testimonial-author">João Santos - CEO, StartupX</div>
-                    </div>
-                    <div class="testimonial">
-                        <p>A equipa da midi8 compreendeu perfeitamente a nossa visão e transformou-a numa realidade ainda melhor do que imaginávamos.</p>
-                        <div class="testimonial-author">Maria Costa - Fundadora, CreativeStudio</div>
-                    </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial animate-on-scroll">
+                    <p>"A MIDI8 transformou completamente nossa presença online. O novo site aumentou nossas conversões em 150%."</p>
+                    <div class="testimonial-author">João Silva, CEO da TechCorp</div>
+                </div>
+                <div class="testimonial animate-on-scroll">
+                    <p>"Equipe extremamente profissional e dedicada. O aplicativo que desenvolveram superou todas as expectativas."</p>
+                    <div class="testimonial-author">Maria Santos, Diretora de Marketing</div>
+                </div>
+                <div class="testimonial animate-on-scroll">
+                    <p>"Parceria de sucesso! A loja virtual que criaram revolucionou nosso negócio."</p>
+                    <div class="testimonial-author">Pedro Oliveira, Proprietário da ModaStore</div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer id="contactos">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <form class="contact-form animate-on-scroll">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contactos</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Avenida da República, 45 - 2º<br>1050-187 Lisboa, Portugal</p>
-                    <p><i class="fas fa-phone"></i> +351 210 123 456</p>
-                    <p><i class="fas fa-envelope"></i> geral@midi8.pt</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Serviços</h3>
-                    <a href="#servicos">Design Criativo</a>
-                    <a href="#servicos">Desenvolvimento Web</a>
-                    <a href="#servicos">Aplicações Mobile</a>
-                    <a href="#servicos">Marketing Digital</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Empresa</h3>
-                    <a href="#sobre">Sobre nós</a>
-                    <a href="#portfolio">Portfólio</a>
-                    <a href="#contactos">Contactos</a>
-                    <a href="#">Política de Privacidade</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Siga-nos</h3>
+                    <h3>MIDI8</h3>
+                    <p>Transformando ideias em realidade digital.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Inovação, 123</p>
+                    <p><i class="fas fa-phone"></i> +351 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> contato@midi8.pt</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#contact">Contato</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 midi8. Todos os direitos reservados.</p>
+                <p>&copy; 2024 MIDI8. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-            menuToggle.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
-
-            const links = document.querySelectorAll('a[href^="#"]');
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if(target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                    navLinks.classList.remove('active');
-                });
-            });
-
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.service-card, .portfolio-item, .feature').forEach(el => {
-                observer.observe(el);
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,86 +1,72 @@
-# 🌐 Instruções para Activar midi8.pt
+# Instruções para Ativação do Domínio midi8.pt
 
-## ✅ Passo 1: GitHub Pages (Já Configurado!)
+## 1. Configuração do GitHub Pages
 
-O repositório já está preparado para GitHub Pages. Siga estes passos:
+1. Acesse o repositório no GitHub
+2. Vá para Settings > Pages
+3. Em "Source", selecione "Deploy from a branch"
+4. Em "Branch", selecione "gh-pages" e "/(root)"
+5. Clique em "Save"
 
-### No GitHub:
-1. Vá a **Settings** > **Pages**
-2. Em **Source** seleccione: **Deploy from a branch**
-3. Em **Branch** seleccione: **main** / (root)
-4. Clique **Save**
+## 2. Configuração DNS
 
-## ✅ Passo 2: Configurar DNS do Domínio midi8.pt
+Configure os seguintes registros DNS no seu provedor de domínio:
 
-No painel de controlo do seu registo de domínio, adicione:
-
-### Registos A (para domínio principal):
+### Registros A
 ```
 Tipo: A
 Nome: @
 Valor: 185.199.108.153
-
-Tipo: A  
-Nome: @
-Valor: 185.199.109.153
+TTL: 3600
 
 Tipo: A
-Nome: @  
+Nome: @
+Valor: 185.199.109.153
+TTL: 3600
+
+Tipo: A
+Nome: @
 Valor: 185.199.110.153
+TTL: 3600
 
 Tipo: A
 Nome: @
 Valor: 185.199.111.153
+TTL: 3600
 ```
 
-### Registo CNAME (para www):
+### Registro CNAME
 ```
 Tipo: CNAME
 Nome: www
-Valor: midi8.pt
+Valor: vvitorr.github.io
+TTL: 3600
 ```
 
-## ✅ Passo 3: Deploy Automático
+## 3. Verificação
 
-Execute o script de deploy:
-```bash
-./deploy.sh
-```
+1. Aguarde a propagação DNS (pode levar até 24 horas)
+2. Verifique se o site está acessível em:
+   - https://midi8.pt
+   - https://www.midi8.pt
 
-Ou manualmente:
-```bash
-git add .
-git commit -m "Activar website midi8.pt"
-git push origin main
-```
+## 4. Troubleshooting
 
-## ⏱️ Tempo de Propagação
+Se o site não estiver acessível após 24 horas:
 
-- **GitHub Pages**: 1-2 minutos
-- **DNS**: 2-24 horas (normalmente 15-30 minutos)
+1. Verifique se os registros DNS estão corretos
+2. Confirme se o GitHub Pages está ativo
+3. Verifique se o arquivo CNAME está presente no repositório
+4. Teste a conexão usando:
+   ```bash
+   curl -I https://midi8.pt
+   ```
 
-## 🔍 Verificar Funcionamento
+## 5. Suporte
 
-1. **GitHub Pages**: https://[username].github.io/midi8
-2. **Domínio**: https://midi8.pt (após propagação DNS)
-
-## 📞 Contactos no Website
-
-- **Morada**: Avenida da República, 45 - 2º, 1050-187 Lisboa
-- **Telefone**: +351 210 123 456  
-- **Email**: geral@midi8.pt
-
-## 🚨 Troubleshooting
-
-### Se o domínio não funcionar:
-1. Verificar DNS com: `nslookup midi8.pt`
-2. Verificar CNAME no GitHub Pages
-3. Aguardar propagação DNS (até 24h)
-
-### Se GitHub Pages não activar:
-1. Verificar repositório público
-2. Verificar ficheiro CNAME
-3. Verificar Settings > Pages
+Para suporte adicional:
+- Email: contato@midi8.pt
+- GitHub Issues: [Criar Issue](https://github.com/vvitorr/midi8/issues)
 
 ---
 
