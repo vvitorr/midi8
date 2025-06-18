@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIDI8 - Soluções Digitais</title>
+    <title>MIDI8 - Soluções Digitais Inovadoras</title>
     <meta name="description" content="MIDI8 - Sua parceira em soluções digitais inovadoras. Desenvolvimento web, aplicativos móveis e consultoria em tecnologia.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -450,7 +450,7 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="#" class="logo">
+            <a href="/" class="logo">
                 <img src="images/logo.png" alt="MIDI8 Logo">
                 MIDI8
             </a>
@@ -460,62 +460,61 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="/" class="active">Início</a></li>
+                <li><a href="/pages/sobre">Sobre</a></li>
+                <li><a href="/pages/servicos">Serviços</a></li>
+                <li><a href="/pages/portfolio">Portfólio</a></li>
+                <li><a href="/pages/depoimentos">Depoimentos</a></li>
+                <li><a href="/pages/contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Transformando Ideias em Realidade Digital</h1>
-            <p>Soluções tecnológicas inovadoras para impulsionar seu negócio</p>
-            <a href="#contact" class="cta-button">Comece Agora</a>
+            <h1 class="animate-on-scroll">Transformando Ideias em Realidade Digital</h1>
+            <p class="animate-on-scroll">Soluções tecnológicas inovadoras para impulsionar seu negócio</p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="/pages/servicos" class="cta-button primary">Nossos Serviços</a>
+                <a href="/pages/contato" class="cta-button secondary">Fale Conosco</a>
+            </div>
+        </div>
+        <div class="hero-image animate-on-scroll">
+            <img src="images/hero-illustration.svg" alt="Ilustração Digital">
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <h2 class="section-title">Sobre Nós</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>A MIDI8 é uma empresa de tecnologia focada em criar soluções digitais inovadoras que transformam negócios. Com anos de experiência e uma equipe altamente qualificada, entregamos projetos que fazem a diferença.</p>
-                    <p>Nossa missão é ajudar empresas a alcançarem seu potencial máximo através da tecnologia, oferecendo soluções personalizadas e resultados mensuráveis.</p>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Inovação</h3>
+                    <p>Sempre à frente com as últimas tecnologias</p>
                 </div>
-                <div class="about-features">
-                    <div class="feature animate-on-scroll">
-                        <i class="fas fa-rocket"></i>
-                        <h3>Inovação</h3>
-                        <p>Sempre à frente com as últimas tecnologias</p>
-                    </div>
-                    <div class="feature animate-on-scroll">
-                        <i class="fas fa-users"></i>
-                        <h3>Equipe</h3>
-                        <p>Profissionais altamente qualificados</p>
-                    </div>
-                    <div class="feature animate-on-scroll">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Resultados</h3>
-                        <p>Foco em entregar valor real</p>
-                    </div>
-                    <div class="feature animate-on-scroll">
-                        <i class="fas fa-handshake"></i>
-                        <h3>Parceria</h3>
-                        <p>Relacionamento próximo com clientes</p>
-                    </div>
+                <div class="feature-card animate-on-scroll">
+                    <i class="fas fa-users"></i>
+                    <h3>Equipe</h3>
+                    <p>Profissionais altamente qualificados</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Resultados</h3>
+                    <p>Foco em entregar valor real</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Parceria</h3>
+                    <p>Relacionamento próximo com clientes</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Services Preview -->
+    <section class="services-preview">
         <div class="container">
             <h2 class="section-title">Nossos Serviços</h2>
             <div class="services-grid">
@@ -523,112 +522,107 @@
                     <i class="fas fa-laptop-code"></i>
                     <h3>Desenvolvimento Web</h3>
                     <p>Sites e aplicações web modernas, responsivas e otimizadas para SEO.</p>
+                    <a href="/pages/servicos#web" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Apps Móveis</h3>
                     <p>Aplicativos nativos e híbridos para iOS e Android.</p>
+                    <a href="/pages/servicos#mobile" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <i class="fas fa-shopping-cart"></i>
                     <h3>E-commerce</h3>
                     <p>Lojas virtuais completas com integração de pagamentos.</p>
+                    <a href="/pages/servicos#ecommerce" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Marketing Digital</h3>
-                    <p>Estratégias de marketing online para aumentar sua presença digital.</p>
-                </div>
+            </div>
+            <div class="text-center">
+                <a href="/pages/servicos" class="cta-button">Ver Todos os Serviços</a>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Preview -->
+    <section class="portfolio-preview">
         <div class="container">
-            <h2 class="section-title">Portfólio</h2>
-            <div class="portfolio-filter">
-                <button class="active" data-filter="all">Todos</button>
-                <button data-filter="web">Web</button>
-                <button data-filter="mobile">Mobile</button>
-                <button data-filter="ecommerce">E-commerce</button>
-            </div>
+            <h2 class="section-title">Últimos Projetos</h2>
             <div class="portfolio-grid">
-                <div class="portfolio-item animate-on-scroll" data-category="web">
+                <div class="portfolio-item animate-on-scroll">
                     <div class="portfolio-image">
-                        <i class="fas fa-globe"></i>
+                        <img src="images/portfolio/project1.jpg" alt="Projeto 1">
+                        <div class="portfolio-overlay">
+                            <a href="/pages/portfolio#project1" class="view-project">Ver Projeto</a>
+                        </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>Site Corporativo</h3>
-                        <p>Design moderno e responsivo para empresa de tecnologia</p>
+                        <h3>E-commerce ModaLux</h3>
+                        <p>Plataforma completa de vendas online</p>
                     </div>
                 </div>
-                <div class="portfolio-item animate-on-scroll" data-category="mobile">
+                <div class="portfolio-item animate-on-scroll">
                     <div class="portfolio-image">
-                        <i class="fas fa-mobile-alt"></i>
+                        <img src="images/portfolio/project2.jpg" alt="Projeto 2">
+                        <div class="portfolio-overlay">
+                            <a href="/pages/portfolio#project2" class="view-project">Ver Projeto</a>
+                        </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>App de Delivery</h3>
-                        <p>Aplicativo de entrega de comida com geolocalização</p>
+                        <h3>App Delivery Food</h3>
+                        <p>Aplicativo de entrega de comida</p>
                     </div>
                 </div>
-                <div class="portfolio-item animate-on-scroll" data-category="ecommerce">
+                <div class="portfolio-item animate-on-scroll">
                     <div class="portfolio-image">
-                        <i class="fas fa-shopping-bag"></i>
+                        <img src="images/portfolio/project3.jpg" alt="Projeto 3">
+                        <div class="portfolio-overlay">
+                            <a href="/pages/portfolio#project3" class="view-project">Ver Projeto</a>
+                        </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>Loja Virtual</h3>
-                        <p>E-commerce completo com múltiplos métodos de pagamento</p>
+                        <h3>Website TechCorp</h3>
+                        <p>Site corporativo moderno</p>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a href="/pages/portfolio" class="cta-button">Ver Portfólio Completo</a>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- Testimonials Preview -->
+    <section class="testimonials-preview">
         <div class="container">
-            <h2 class="section-title">Depoimentos</h2>
-            <div class="testimonials-grid">
+            <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+            <div class="testimonials-slider">
                 <div class="testimonial animate-on-scroll">
-                    <p>"A MIDI8 transformou completamente nossa presença online. O novo site aumentou nossas conversões em 150%."</p>
-                    <div class="testimonial-author">João Silva, CEO da TechCorp</div>
+                    <div class="testimonial-content">
+                        <p>"A MIDI8 transformou completamente nossa presença online. O novo site aumentou nossas conversões em 150%."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonials/client1.jpg" alt="João Silva">
+                            <div>
+                                <h4>João Silva</h4>
+                                <p>CEO da TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial animate-on-scroll">
-                    <p>"Equipe extremamente profissional e dedicada. O aplicativo que desenvolveram superou todas as expectativas."</p>
-                    <div class="testimonial-author">Maria Santos, Diretora de Marketing</div>
-                </div>
-                <div class="testimonial animate-on-scroll">
-                    <p>"Parceria de sucesso! A loja virtual que criaram revolucionou nosso negócio."</p>
-                    <div class="testimonial-author">Pedro Oliveira, Proprietário da ModaStore</div>
-                </div>
+            </div>
+            <div class="text-center">
+                <a href="/pages/depoimentos" class="cta-button">Ver Todos os Depoimentos</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <form class="contact-form animate-on-scroll">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Assunto</label>
-                    <input type="text" id="subject" name="subject" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="cta-button">Enviar Mensagem</button>
-            </form>
+            <div class="cta-content animate-on-scroll">
+                <h2>Pronto para Transformar seu Negócio?</h2>
+                <p>Entre em contato conosco e descubra como podemos ajudar você a alcançar seus objetivos.</p>
+                <a href="/pages/contato" class="cta-button">Comece Agora</a>
+            </div>
         </div>
     </section>
 
@@ -654,11 +648,11 @@
                 </div>
                 <div class="footer-section">
                     <h3>Links Rápidos</h3>
-                    <a href="#home">Início</a>
-                    <a href="#about">Sobre</a>
-                    <a href="#services">Serviços</a>
-                    <a href="#portfolio">Portfólio</a>
-                    <a href="#contact">Contato</a>
+                    <a href="/">Início</a>
+                    <a href="/pages/sobre">Sobre</a>
+                    <a href="/pages/servicos">Serviços</a>
+                    <a href="/pages/portfolio">Portfólio</a>
+                    <a href="/pages/contato">Contato</a>
                 </div>
             </div>
             <div class="footer-bottom">

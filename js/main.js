@@ -20,14 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Header scroll effect
     const header = document.querySelector('header');
     if(header) {
+        let lastScroll = 0;
         window.addEventListener('scroll', () => {
-            if(window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
+            const currentScroll = window.pageYOffset;
+            
+            if(currentScroll <= 0) {
                 header.classList.remove('scrolled');
+                return;
             }
+            
+            if(currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+                header.classList.remove('scrolled');
+                header.classList.add('scroll-down');
+            } else if(currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+                header.classList.remove('scroll-down');
+                header.classList.add('scrolled');
+            }
+            
+            lastScroll = currentScroll;
         });
     }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if(!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    });
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -52,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollTop = document.querySelector('.scroll-top');
     if(scrollTop) {
         window.addEventListener('scroll', () => {
-            if(window.scrollY > 300) {
+            if(window.pageYOffset > 300) {
                 scrollTop.classList.add('visible');
             } else {
                 scrollTop.classList.remove('visible');
@@ -119,26 +139,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Portfolio filter
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    const filterButtons = document.querySelectorAll('.portfolio-filter button');
-    
-    if(filterButtons.length && portfolioItems.length) {
+    const portfolioFilter = document.querySelector('.portfolio-filter');
+    if(portfolioFilter) {
+        const filterButtons = portfolioFilter.querySelectorAll('button');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const filter = button.getAttribute('data-filter');
                 
-                // Update active button
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-
-                // Filter items
+                
                 portfolioItems.forEach(item => {
                     if(filter === 'all' || item.getAttribute('data-category') === filter) {
                         item.style.display = 'block';
-                        setTimeout(() => item.style.opacity = '1', 0);
                     } else {
-                        item.style.opacity = '0';
-                        setTimeout(() => item.style.display = 'none', 300);
+                        item.style.display = 'none';
                     }
                 });
             });
@@ -146,15 +163,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Testimonials slider
-    const testimonials = document.querySelectorAll('.testimonial');
-    let currentTestimonial = 0;
-
-    if(testimonials.length > 1) {
-        setInterval(() => {
-            testimonials[currentTestimonial].style.opacity = '0';
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            testimonials[currentTestimonial].style.opacity = '1';
-        }, 5000);
+    const testimonialsSlider = document.querySelector('.testimonials-slider');
+    if(testimonialsSlider) {
+        let currentSlide = 0;
+        const slides = testimonialsSlider.querySelectorAll('.testimonial');
+        const totalSlides = slides.length;
+        
+        const showSlide = (index) => {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        };
+        
+        const nextSlide = () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        };
+        
+        const prevSlide = () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        };
+        
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+        
+        // Add navigation buttons if there are multiple slides
+        if(totalSlides > 1) {
+            const prevButton = document.createElement('button');
+            prevButton.className = 'slider-nav prev';
+            prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevButton.addEventListener('click', prevSlide);
+            
+            const nextButton = document.createElement('button');
+            nextButton.className = 'slider-nav next';
+            nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextButton.addEventListener('click', nextSlide);
+            
+            testimonialsSlider.appendChild(prevButton);
+            testimonialsSlider.appendChild(nextButton);
+        }
+        
+        // Initialize slider
+        showSlide(currentSlide);
     }
 
     // Helper functions
