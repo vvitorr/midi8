@@ -3,61 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - MIDI8</title>
-    <meta name="description" content="Conheça a MIDI8, sua parceira em soluções digitais inovadoras. Nossa história, missão, valores e equipe.">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/about.css">
+    <title>Sobre Nós - Midi8</title>
+    <meta name="description" content="Conheça a Midi8, especialista em gestão de redes sociais e desenvolvimento de sites para pequenos negócios.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/about.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎵%3C/text%3E%3C/svg%3E">
 </head>
 <body>
     <!-- Loading Animation -->
-    <div class="loading">
+    <div class="loading" id="loading">
         <div class="loading-spinner"></div>
     </div>
 
     <!-- Header -->
-    <header>
-        <nav class="container">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="MIDI8 Logo">
-                MIDI8
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="../../" class="logo">
+                <span>Midi8</span>
             </a>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="/pages/sobre" class="active">Sobre</a></li>
-                <li><a href="/pages/servicos">Serviços</a></li>
-                <li><a href="/pages/portfolio">Portfólio</a></li>
-                <li><a href="/pages/depoimentos">Depoimentos</a></li>
-                <li><a href="/pages/contato">Contato</a></li>
-            </ul>
-        </nav>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../" class="nav-link">Início</a></li>
+                    <li><a href="../sobre/" class="nav-link active">Sobre Nós</a></li>
+                    <li><a href="../servicos/" class="nav-link">Serviços</a></li>
+                    <li><a href="../portfolio/" class="nav-link">Portfólio</a></li>
+                    <li><a href="../depoimentos/" class="nav-link">Depoimentos</a></li>
+                    <li><a href="../contato/" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="container">
-            <h1 class="animate-on-scroll">Sobre a MIDI8</h1>
-            <p class="animate-on-scroll">Conheça nossa história, missão e valores</p>
-        </div>
+        <h1>Sobre a <span style="color: #FFE66D;">Midi8</span></h1>
+        <p>Ajudamos pequenos negócios a crescer online com proximidade, criatividade e confiança</p>
     </section>
 
     <!-- Story Section -->
-    <section class="story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text animate-on-scroll">
-                    <h2>Nossa História</h2>
-                    <p>Fundada em 2020, a MIDI8 nasceu da paixão por tecnologia e inovação. Começamos como uma pequena equipe de desenvolvedores apaixonados e hoje somos uma empresa reconhecida no mercado de soluções digitais.</p>
-                    <p>Ao longo dos anos, expandimos nossa atuação para incluir desenvolvimento web, aplicativos móveis, e-commerce e consultoria em tecnologia, sempre mantendo nosso compromisso com a excelência e inovação.</p>
-                </div>
-                <div class="story-image animate-on-scroll">
-                    <img src="/images/about/story.jpg" alt="Nossa História">
+    <section class="story-section">
+        <div class="story-content">
+            <div class="story-text animate-on-scroll">
+                <h2>A Nossa História</h2>
+                <p>A Midi8 nasceu da paixão por ajudar pequenos negócios a terem sucesso no mundo digital. Fundada em 2020, começámos como uma pequena equipa dedicada a tornar o marketing digital acessível e eficaz para empresas locais.</p>
+                <p>Especializamo-nos em gestão de redes sociais e desenvolvimento de websites porque acreditamos que cada negócio merece uma presença digital profissional e impactante, independentemente do seu tamanho ou orçamento.</p>
+                <p>Hoje, orgulhamo-nos de ser a parceira digital de confiança de dezenas de pequenos negócios, ajudando-os a crescer e prosperar online.</p>
+            </div>
+            <div class="story-image animate-on-scroll">
+                <div style="background: linear-gradient(135deg, #F4A261, #E63946); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                    <i class="fas fa-heart"></i>
                 </div>
             </div>
         </div>
@@ -65,174 +74,181 @@
 
     <!-- Mission & Values -->
     <section class="mission-values">
-        <div class="container">
-            <div class="mission animate-on-scroll">
-                <h2>Nossa Missão</h2>
-                <p>Transformar ideias em soluções digitais inovadoras que impulsionam o sucesso dos nossos clientes, através de tecnologia de ponta e atendimento excepcional.</p>
+        <div class="mission-content animate-on-scroll">
+            <h2>A Nossa Missão</h2>
+            <p>Ajudar pequenos negócios a crescer online com soluções acessíveis de marketing digital, criando uma presença digital autêntica que reflita os valores e personalidade de cada empresa.</p>
+        </div>
+        
+        <div class="values-grid">
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Proximidade</h3>
+                <p>Trabalhamos lado a lado com os nossos clientes, criando relações duradouras baseadas na confiança e compreensão mútua.</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card animate-on-scroll">
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
                     <i class="fas fa-lightbulb"></i>
-                    <h3>Inovação</h3>
-                    <p>Sempre à frente com as últimas tecnologias e tendências do mercado.</p>
                 </div>
-                <div class="value-card animate-on-scroll">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Compromisso</h3>
-                    <p>Dedicação total ao sucesso dos nossos clientes e seus projetos.</p>
+                <h3>Criatividade</h3>
+                <p>Cada projeto é único. Desenvolvemos soluções criativas e personalizadas que destacam a identidade de cada negócio.</p>
+            </div>
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
-                <div class="value-card animate-on-scroll">
-                    <i class="fas fa-users"></i>
-                    <h3>Colaboração</h3>
-                    <p>Trabalho em equipe e parceria com nossos clientes.</p>
-                </div>
-                <div class="value-card animate-on-scroll">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Excelência</h3>
-                    <p>Busca constante pela qualidade e melhores resultados.</p>
-                </div>
+                <h3>Confiança</h3>
+                <p>Cumprimos sempre as nossas promessas e mantemos a transparência total em todos os processos e resultados.</p>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <h2 class="section-title">Nossa Equipe</h2>
-            <div class="team-grid">
-                <div class="team-member animate-on-scroll">
-                    <div class="member-image">
-                        <img src="/images/team/member1.jpg" alt="João Silva">
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
+    <section class="team-section">
+        <div class="section-title">
+            <h2>A Nossa <span class="highlight">Equipa</span></h2>
+            <p>Profissionais dedicados ao sucesso do seu negócio</p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-member animate-on-scroll">
+                <div class="member-image">
+                    <div style="background: linear-gradient(135deg, #F4A261, #E63946); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        <i class="fas fa-user"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>João Silva</h3>
-                        <p>CEO & Fundador</p>
-                    </div>
-                </div>
-                <div class="team-member animate-on-scroll">
-                    <div class="member-image">
-                        <img src="/images/team/member2.jpg" alt="Maria Santos">
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Maria Santos</h3>
-                        <p>CTO</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="team-member animate-on-scroll">
-                    <div class="member-image">
-                        <img src="/images/team/member3.jpg" alt="Pedro Oliveira">
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
+                <div class="member-info">
+                    <h3>João Silva</h3>
+                    <p>Fundador & Estrategista Digital</p>
+                </div>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <div class="member-image">
+                    <div style="background: linear-gradient(135deg, #E63946, #F4A261); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        <i class="fas fa-user"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Pedro Oliveira</h3>
-                        <p>Diretor de Projetos</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="team-member animate-on-scroll">
-                    <div class="member-image">
-                        <img src="/images/team/member4.jpg" alt="Ana Costa">
-                        <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
+                <div class="member-info">
+                    <h3>Maria Santos</h3>
+                    <p>Gestora de Redes Sociais</p>
+                </div>
+            </div>
+            <div class="team-member animate-on-scroll">
+                <div class="member-image">
+                    <div style="background: linear-gradient(135deg, #F4A261, #E63946); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        <i class="fas fa-user"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Ana Costa</h3>
-                        <p>Designer Chefe</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
+                </div>
+                <div class="member-info">
+                    <h3>Pedro Costa</h3>
+                    <p>Desenvolvedor Web</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item animate-on-scroll">
-                    <div class="stat-number" data-count="150">0</div>
-                    <p>Projetos Entregues</p>
-                </div>
-                <div class="stat-item animate-on-scroll">
-                    <div class="stat-number" data-count="50">0</div>
-                    <p>Clientes Satisfeitos</p>
-                </div>
-                <div class="stat-item animate-on-scroll">
-                    <div class="stat-number" data-count="15">0</div>
-                    <p>Prêmios Recebidos</p>
-                </div>
-                <div class="stat-item animate-on-scroll">
-                    <div class="stat-number" data-count="4">0</div>
-                    <p>Anos de Experiência</p>
-                </div>
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Projetos Entregues</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-label">Clientes Satisfeitos</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number" data-count="5">0</div>
+                <div class="stat-label">Prémios Recebidos</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-number" data-count="4">0</div>
+                <div class="stat-label">Anos de Experiência</div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="container">
-            <div class="cta-content animate-on-scroll">
-                <h2>Pronto para Começar seu Projeto?</h2>
-                <p>Entre em contato conosco e descubra como podemos ajudar você a alcançar seus objetivos.</p>
-                <a href="/pages/contato" class="cta-button">Fale Conosco</a>
-            </div>
+        <div class="cta-content animate-on-scroll">
+            <h2>Pronto para fazer crescer o seu negócio?</h2>
+            <p>Contacte-nos hoje e descubra como podemos ajudá-lo a ter sucesso online</p>
+            <a href="../contato/" class="button button-primary">
+                <i class="fas fa-envelope"></i>
+                Fale connosco
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>MIDI8</h3>
-                    <p>Transformando ideias em realidade digital.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span>Midi8</span>
                 </div>
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua da Inovação, 123</p>
-                    <p><i class="fas fa-phone"></i> +351 123 456 789</p>
-                    <p><i class="fas fa-envelope"></i> contato@midi8.pt</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Links Rápidos</h3>
-                    <a href="/">Início</a>
-                    <a href="/pages/sobre">Sobre</a>
-                    <a href="/pages/servicos">Serviços</a>
-                    <a href="/pages/portfolio">Portfólio</a>
-                    <a href="/pages/contato">Contato</a>
+                <p>Ajudamos pequenos negócios a crescer online com soluções acessíveis de marketing digital e desenvolvimento web.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 MIDI8. Todos os direitos reservados.</p>
+            
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul class="footer-links">
+                    <li><a href="../servicos/">Gestão de Redes Sociais</a></li>
+                    <li><a href="../servicos/">Desenvolvimento de Sites</a></li>
+                    <li><a href="../servicos/">Branding Digital</a></li>
+                </ul>
             </div>
+            
+            <div class="footer-section">
+                <h4>Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="../sobre/">Sobre Nós</a></li>
+                    <li><a href="../portfolio/">Portfólio</a></li>
+                    <li><a href="../depoimentos/">Depoimentos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> info@midi8.pt</li>
+                    <li><i class="fas fa-phone"></i> +351 912 345 678</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Porto, Portugal</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Midi8. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <div class="scroll-top">
+    <a href="#" class="scroll-top" id="scrollTop">
         <i class="fas fa-arrow-up"></i>
-    </div>
+    </a>
 
-    <!-- Scripts -->
-    <script src="/js/main.js"></script>
-    <script src="/js/about.js"></script>
+    <!-- JavaScript -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/about.js"></script>
 </body>
 </html> 
