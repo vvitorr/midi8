@@ -5,30 +5,36 @@
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 160px 0 100px;
 }
 
 .page-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .page-hero p {
     font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
     opacity: 0.9;
 }
 
 /* Services Overview */
 .services-overview {
-    padding: 80px 0;
-    background-color: var(--light-bg);
+    padding: 100px 0;
+    background: var(--light-bg);
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .service-card {
@@ -36,54 +42,54 @@
     border-radius: 10px;
     padding: 40px;
     box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease;
+    transition: var(--transition);
+    text-align: center;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .service-icon {
-    width: 80px;
-    height: 80px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-.service-icon i {
-    font-size: 2rem;
-    color: white;
-}
-
-.service-card h2 {
-    font-size: 1.8rem;
+.service-card h3 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
     color: var(--text-color);
 }
 
+.service-card p {
+    color: var(--light-text);
+    margin-bottom: 25px;
+}
+
 .service-features {
     list-style: none;
-    margin: 20px 0;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .service-features li {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
 }
 
-.service-features i {
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
     color: var(--primary-color);
-    margin-right: 10px;
+    font-weight: bold;
 }
 
 /* Process Section */
-.process {
-    padding: 80px 0;
+.process-section {
+    padding: 100px 0;
     background: white;
 }
 
@@ -91,7 +97,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .process-step {
@@ -101,8 +109,8 @@
 }
 
 .step-number {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: var(--primary-color);
     color: white;
     border-radius: 50%;
@@ -110,57 +118,71 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin: 0 auto 20px;
 }
 
 .process-step h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
     color: var(--text-color);
 }
 
-/* Technologies Section */
-.technologies {
-    padding: 80px 0;
-    background-color: var(--light-bg);
+.process-step p {
+    color: var(--light-text);
 }
 
-.tech-grid {
+/* Technologies Section */
+.technologies-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.tech-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tech-category {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--card-shadow);
 }
 
 .tech-category h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     color: var(--text-color);
+    text-align: center;
 }
 
 .tech-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
 }
 
 .tech-item {
     text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease;
+    padding: 15px;
+    border-radius: 6px;
+    transition: var(--transition);
+    cursor: pointer;
 }
 
 .tech-item:hover {
-    transform: translateY(-5px);
+    background: var(--light-bg);
+    transform: translateY(-2px);
 }
 
-.tech-item img {
-    width: 50px;
-    height: 50px;
+.tech-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
@@ -171,40 +193,47 @@
 }
 
 /* FAQ Section */
-.faq {
-    padding: 80px 0;
+.faq-section {
+    padding: 100px 0;
     background: white;
 }
 
-.faq-grid {
+.faq-container {
     max-width: 800px;
-    margin: 40px auto 0;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .faq-item {
     margin-bottom: 20px;
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
 .faq-question {
     padding: 20px;
-    background: var(--light-bg);
+    background: white;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: var(--transition);
 }
 
 .faq-question h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     margin: 0;
 }
 
 .faq-question i {
-    transition: transform 0.3s ease;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-question {
+    background: var(--light-bg);
 }
 
 .faq-item.active .faq-question i {
@@ -215,20 +244,31 @@
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: var(--transition);
 }
 
 .faq-item.active .faq-answer {
     padding: 20px;
-    max-height: 200px;
+    max-height: 1000px;
+}
+
+.faq-answer p {
+    color: var(--light-text);
+    margin: 0;
 }
 
 /* CTA Section */
 .cta-section {
-    padding: 80px 0;
+    padding: 100px 0;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .cta-content h2 {
@@ -237,32 +277,17 @@
 }
 
 .cta-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
     opacity: 0.9;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: white;
-    color: var(--primary-color);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .page-hero h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-    
+
     .service-card {
         padding: 30px;
     }
@@ -270,42 +295,51 @@
 
 @media (max-width: 768px) {
     .page-hero {
-        padding: 60px 0;
+        padding: 120px 0 80px;
     }
-    
+
     .page-hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    
-    .services-grid,
-    .process-steps,
-    .tech-grid {
-        grid-template-columns: 1fr;
+
+    .services-overview,
+    .process-section,
+    .technologies-section,
+    .faq-section,
+    .cta-section {
+        padding: 80px 0;
     }
-    
+
+    .service-card {
+        padding: 25px;
+    }
+
     .tech-items {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
     .page-hero h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
-    
-    .service-icon {
-        width: 60px;
-        height: 60px;
+
+    .page-hero p {
+        font-size: 1rem;
     }
-    
-    .service-icon i {
-        font-size: 1.5rem;
+
+    .services-overview,
+    .process-section,
+    .technologies-section,
+    .faq-section,
+    .cta-section {
+        padding: 60px 0;
     }
-    
-    .tech-items {
-        grid-template-columns: repeat(2, 1fr);
+
+    .service-card {
+        padding: 20px;
     }
-    
+
     .cta-content h2 {
         font-size: 2rem;
     }
