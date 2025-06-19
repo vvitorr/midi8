@@ -4,17 +4,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const icon = question.querySelector('i');
         
         question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all FAQ items
-            faqItems.forEach(faqItem => {
-                faqItem.classList.remove('active');
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    const otherIcon = otherItem.querySelector('.faq-question i');
+                    otherAnswer.style.maxHeight = null;
+                    otherIcon.style.transform = 'rotate(0deg)';
+                    otherItem.classList.remove('active');
+                }
             });
             
-            // Open clicked item if it wasn't active
-            if(!isActive) {
+            // Toggle current item
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+                item.classList.remove('active');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
                 item.classList.add('active');
             }
         });
