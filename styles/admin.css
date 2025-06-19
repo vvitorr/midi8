@@ -16,7 +16,7 @@
 }
 
 .login-box {
-    background: white;
+    background: var(--light-bg);
     border-radius: 10px;
     padding: 40px;
     box-shadow: var(--card-shadow);
@@ -65,6 +65,7 @@
     border-radius: 6px;
     font-size: 1rem;
     transition: var(--transition);
+    background: white;
 }
 
 .login-form input:focus {
@@ -102,14 +103,14 @@
 }
 
 .login-message.error {
-    background: #fee;
-    color: #c00;
+    background: #fff0f0;
+    color: #ff2d00;
     display: block;
 }
 
 .login-message.success {
-    background: #efe;
-    color: #0c0;
+    background: #f0fff0;
+    color: #00a854;
     display: block;
 }
 
@@ -117,6 +118,7 @@
 .admin-panel {
     display: flex;
     min-height: 100vh;
+    background: var(--light-bg);
 }
 
 .admin-sidebar {
@@ -193,6 +195,7 @@
 .admin-nav a:hover,
 .admin-nav a.active {
     background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
 }
 
 .admin-nav i {
@@ -246,6 +249,7 @@
     border-radius: 6px;
     font-size: 1rem;
     transition: var(--transition);
+    background: white;
 }
 
 .editor-field textarea {
@@ -343,11 +347,11 @@
 }
 
 .message.success {
-    background: #10b981;
+    background: var(--primary-color);
 }
 
 .message.error {
-    background: #ef4444;
+    background: var(--secondary-color);
 }
 
 @keyframes slideIn {

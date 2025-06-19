@@ -1,14 +1,14 @@
 /* Main Styles */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1d4ed8;
-    --accent-color: #3b82f6;
+    --primary-color: #ff4d00;
+    --secondary-color: #ff2d00;
+    --accent-color: #ff6b00;
     --text-color: #1f2937;
     --light-text: #6b7280;
-    --dark-bg: #111827;
-    --light-bg: #f3f4f6;
-    --border-color: #e5e7eb;
-    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --dark-bg: #1a1a1a;
+    --light-bg: #fff5f2;
+    --border-color: #ffe0d6;
+    --card-shadow: 0 4px 6px -1px rgba(255, 77, 0, 0.1), 0 2px 4px -1px rgba(255, 77, 0, 0.06);
     --transition: all 0.3s ease;
 }
 
