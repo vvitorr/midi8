@@ -1,0 +1,202 @@
+/* ==========================================================================
+   SEÇÃO SERVIÇOS STYLES
+   ========================================================================== */
+
+body, .servicos-section {
+    background:
+        radial-gradient(ellipse at 60% 40%, rgba(44, 82, 130, 0.25) 0%, rgba(26, 54, 93, 0.18) 40%, rgba(10, 13, 20, 0.95) 100%),
+        linear-gradient(135deg, #00296B 0%, #003F88 50%, #00509D 100%);
+    color: #fff;
+}
+
+.servicos-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.servicos-section h2 {
+    font-size: 2.2rem;
+    background: linear-gradient(90deg, #FFD500 10%, #fff 40%, #FFD500 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 2px 12px #FFD50033;
+}
+
+.servicos-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #FDC500;
+    border-radius: 2px;
+}
+
+.servicos-description {
+    font-size: 1.15rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.servico-card {
+    background: rgba(255,255,255,0.13);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid #FFD50055;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 18px #FFD50022;
+    backdrop-filter: blur(8px);
+}
+
+.servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.servico-card:hover::before {
+    left: 100%;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #FFD500;
+    box-shadow: 0 20px 40px #FFD50055;
+    background: rgba(255,255,255,0.18);
+    color: #FFD500;
+}
+
+.servico-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FFD500 0%, #FDC500 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: #003F88;
+    font-size: 2rem;
+    box-shadow: 0 2px 12px #FFD50033;
+    transition: all 0.3s;
+}
+
+.servico-card:hover .servico-icon {
+    background: linear-gradient(135deg, #fff 0%, #FFD500 100%);
+    color: #003F88;
+    transform: scale(1.1) rotate(-6deg);
+    box-shadow: 0 4px 24px #FFD50055;
+}
+
+.servico-card h3 {
+    background: linear-gradient(90deg, #FFD500 10%, #fff 40%, #FFD500 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-shadow: 0 2px 12px #FFD50033;
+}
+
+.servico-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.servico-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.servico-features li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.2rem;
+    color: #555;
+}
+
+.servico-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #FFD500;
+    font-weight: bold;
+}
+
+.servico-cta {
+    margin-top: auto;
+}
+
+.servico-cta .btn {
+    width: 100%;
+    background: #00509D;
+    color: #FFD500;
+    border: 2px solid #00509D;
+}
+
+.servico-cta .btn:hover {
+    background: #FFD500;
+    border-color: #FFD500;
+    color: #00509D;
+}
+
+/* Media Queries */
+@media (max-width: 1023px) {
+    .servicos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .servicos-section {
+        padding: 2rem 0;
+    }
+
+    .servicos-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .servicos-description {
+        font-size: 1rem;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .servico-card {
+        padding: 1.2rem;
+    }
+
+    .servico-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - MIDI8</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <img src="/images/logo.png" alt="MIDI8 Logo" class="sidebar-logo">
+                <h2>MIDI8 Admin</h2>
+            </div>
+            <nav>
+                <ul class="admin-nav">
+                    <li>
+                        <a href="#" class="active" data-section="home">
+                            <i class="fas fa-home"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="pages">
+                            <i class="fas fa-file-alt"></i>
+                            Páginas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="services">
+                            <i class="fas fa-cogs"></i>
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            Portfólio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="testimonials">
+                            <i class="fas fa-comments"></i>
+                            Depoimentos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="settings">
+                            <i class="fas fa-cog"></i>
+                            Configurações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="logoutButton">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <h1 class="admin-title">Painel de Controle</h1>
+                <div class="admin-user">
+                    <span>Bem-vindo, Admin</span>
+                </div>
+            </header>
+
+            <!-- Content Sections -->
+            <div id="homeSection" class="content-section active">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Visitas</h3>
+                        <p>1,234</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Mensagens</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Páginas</h3>
+                        <p>6</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Projetos</h3>
+                        <p>24</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pagesSection" class="content-section">
+                <div class="content-editor">
+                    <h2>Editar Páginas</h2>
+                    <div class="editor-section">
+                        <h3>Página Inicial</h3>
+                        <div class="editor-field">
+                            <label for="homeTitle">Título</label>
+                            <input type="text" id="homeTitle" value="MIDI8 - Soluções Digitais Inovadoras">
+                        </div>
+                        <div class="editor-field">
+                            <label for="homeDescription">Descrição</label>
+                            <textarea id="homeDescription">Transformando ideias em realidade digital.</textarea>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="editor-button save">Salvar Alterações</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servicesSection" class="content-section">
+                <div class="content-editor">
+                    <h2>Editar Serviços</h2>
+                    <div class="editor-section">
+                        <h3>Desenvolvimento Web</h3>
+                        <div class="editor-field">
+                            <label for="webTitle">Título</label>
+                            <input type="text" id="webTitle" value="Desenvolvimento Web">
+                        </div>
+                        <div class="editor-field">
+                            <label for="webDescription">Descrição</label>
+                            <textarea id="webDescription">Criamos sites e aplicações web modernas, responsivas e otimizadas para SEO.</textarea>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="editor-button save">Salvar Alterações</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolioSection" class="content-section">
+                <div class="content-editor">
+                    <h2>Gerenciar Portfólio</h2>
+                    <div class="editor-section">
+                        <h3>Adicionar Projeto</h3>
+                        <div class="editor-field">
+                            <label for="projectTitle">Título do Projeto</label>
+                            <input type="text" id="projectTitle">
+                        </div>
+                        <div class="editor-field">
+                            <label for="projectDescription">Descrição</label>
+                            <textarea id="projectDescription"></textarea>
+                        </div>
+                        <div class="editor-field">
+                            <label for="projectImage">Imagem</label>
+                            <input type="file" id="projectImage" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="editor-button save">Adicionar Projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="testimonialsSection" class="content-section">
+                <div class="content-editor">
+                    <h2>Gerenciar Depoimentos</h2>
+                    <div class="editor-section">
+                        <h3>Adicionar Depoimento</h3>
+                        <div class="editor-field">
+                            <label for="clientName">Nome do Cliente</label>
+                            <input type="text" id="clientName">
+                        </div>
+                        <div class="editor-field">
+                            <label for="clientRole">Cargo/Empresa</label>
+                            <input type="text" id="clientRole">
+                        </div>
+                        <div class="editor-field">
+                            <label for="testimonialText">Depoimento</label>
+                            <textarea id="testimonialText"></textarea>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="editor-button save">Adicionar Depoimento</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="settingsSection" class="content-section">
+                <div class="content-editor">
+                    <h2>Configurações</h2>
+                    <div class="editor-section">
+                        <h3>Informações de Contato</h3>
+                        <div class="editor-field">
+                            <label for="contactEmail">E-mail</label>
+                            <input type="email" id="contactEmail" value="contato@midi8.pt">
+                        </div>
+                        <div class="editor-field">
+                            <label for="contactPhone">Telefone</label>
+                            <input type="tel" id="contactPhone" value="+351 123 456 789">
+                        </div>
+                        <div class="editor-field">
+                            <label for="contactAddress">Endereço</label>
+                            <textarea id="contactAddress">Rua da Inovação, 123</textarea>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="editor-button save">Salvar Configurações</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/admin/dashboard.js"></script>
+</body>
+</html> 

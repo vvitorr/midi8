@@ -1,0 +1,65 @@
+/* ==========================================================================
+   MENU MOBILE STYLES
+   ========================================================================== */
+
+/* Menu mobile toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-sm);
+    z-index: 3;
+    transition: all var(--transition-normal);
+}
+
+.menu-toggle:focus {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+}
+
+.hamburger {
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-white);
+    margin: 4px 0;
+    transition: all var(--transition-normal);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação do hamburger para X */
+.menu-toggle.active .hamburger:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 7px);
+    background-color: #fbbf24;
+}
+
+.menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.menu-toggle.active .hamburger:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -7px);
+    background-color: #fbbf24;
+}
+
+/* Mostrar botão do menu mobile em tablets */
+@media (max-width: 1023px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .hamburger {
+        width: 25px;
+        height: 2px;
+    }
+}
+
+/* Performance */
+.hamburger {
+    will-change: transform, background-color;
+}
