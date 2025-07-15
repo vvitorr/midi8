@@ -1,3 +1,6 @@
+// Este ficheiro deve conter apenas scripts da secção Serviços. Se houver scripts globais, mova-os para main.js. Se houver scripts de outras secções, mova-os para o JS respetivo.
+// ===== IMPORTA ANIMAÇÕES DO HEADER =====
+import('../main.js');
 document.addEventListener('DOMContentLoaded', function() {
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');

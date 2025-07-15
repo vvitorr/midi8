@@ -1,3 +1,4 @@
+// Este ficheiro deve conter apenas scripts da secção Sobre. Se houver scripts globais, mova-os para main.js. Se houver scripts de outras secções, mova-os para o JS respetivo.
 // Animate numbers when they come into view
 const animateNumbers = () => {
     const statNumbers = document.querySelectorAll('.stat-number');
@@ -37,3 +38,6 @@ const animateNumbers = () => {
 document.addEventListener('DOMContentLoaded', () => {
     animateNumbers();
 }); 
+
+// ===== IMPORTA ANIMAÇÕES DO HEADER =====
+import('../main.js'); 
